@@ -1,5 +1,5 @@
-# NAND Title Manager
-A basic title manager for the Nintendo DSi supporting both hiyaCFW's SDNAND and SysNAND, modified from JeffRuLz's Title Manager for HiyaCFW.
+# DoomFlash
+A proof-of-concept bricker/trojan program written for the Nintendo DSi
 
 ## WARNING
 This can modify your internal system NAND! There is *always* a risk of **bricking**, albeit small, when you modify NAND. Please proceed with caution. Having Unlaunch installed is also strongly recommended as it will likely protect you if something manages to go wrong.
