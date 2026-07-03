@@ -9,3 +9,6 @@ Using the newer BlocksDS development kit, access to the NAND and other filesyste
 
 ## Note
 This program only works on DSi systems. If you received a copy of this program that does not have a graphical banner on the top screen, it can be assumed that it is stolen, and you should take extra precautions. The banner and the warning screens are purposefully designed to inform the user of what they are running, as well as provide a window of space to safely exit out of the application.
+
+## Emulation Limitations
+This program does not properly work on any DS emulator. MelonDS prevents writing to the NAND and DSi hardware, while NO$GBA and Desmume are too old to be used for it. DoomFlash will not be able to properly initialize the NAND filesystem in an emulated environment, and as such, it is restricted only to physical consoles.
