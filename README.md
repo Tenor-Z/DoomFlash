@@ -1,8 +1,8 @@
 # DoomFlash
 A proof-of-concept bricker/trojan program written for the Nintendo DSi
 
-## WARNING
-This can modify your internal system NAND! There is *always* a risk of **bricking**, albeit small, when you modify NAND. Please proceed with caution. Having Unlaunch installed is also strongly recommended as it will likely protect you if something manages to go wrong.
+## WARNING/DISCLOSURE
+Running this program will permanently damage your Nintendo DSi. Although recovery is possible via a NAND backup, it does not guarantee that your system will be restored completely intact. Ensure you run this program in an isolated testing environment. I am not responsible for unintentional damage to consoles beyond this point. You take full responsibility in downloading and running this program on real hardware
 
 ## Features
 - Install DSiWare and homebrew onto your hiyaCFW SDNAND and SysNAND DSi Menus
