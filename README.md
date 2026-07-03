@@ -4,30 +4,8 @@ A proof-of-concept bricker/trojan program written for the Nintendo DSi
 ## WARNING/DISCLOSURE
 Running this program will permanently damage your Nintendo DSi. Although recovery is possible via a NAND backup, it does not guarantee that your system will be restored completely intact. Ensure you run this program in an isolated testing environment. I am not responsible for unintentional damage to consoles beyond this point. You take full responsibility in downloading and running this program on real hardware
 
-## Features
-- Install DSiWare and homebrew onto your hiyaCFW SDNAND and SysNAND DSi Menus
-- Delete system titles and others hidden from Data Management
-- Backup and restore installed titles
-- View basic title header info
+## Functionality
+Using the newer BlocksDS development kit, access to the NAND and other filesystems is a tad more simpler. This program bricks the console by seeking all components of the System Menu (Home Menu) on the system and overwriting it with invalid data. Rather than the System Menu being it's own individual app, it is comprised of various .app files that designed to work together. The most straightforward way to prevent functionality is by writing garbage data to each .app file for the title, stopping operability right as soon as the power is turned on. 
 
-## Notes
-- Backup your SD card and your NAND! Nothing bad should happen, but this is an early release so who knows
-- This cannot install cartridge games or older DS homebrew directly, for those you need to make [forwarders](https://wiki.ds-homebrew.com/ds-index/forwarders)
-   - Always test your forwarders from TWiLight Menu++ or Unlaunch before installing to SysNAND
-- Save files and legit TMDs can be used by giving them the following names, where `[rom name]` is the file name of the ROM *without* the extension
-   - `public.sav` => `[rom name].pub`
-   - `private.sav` => `[rom name].prv`
-   - `banner.sav` => `[rom name].bnr`
-   - `title.tmd` => `[rom name].tmd`
-- If you want your DSiWare to work without RSA patches make sure to provide a legit TMD
-   - Homebrew and DSiWare without a legit TMD require Unlaunch installed with its launcher patches enabled when installed to SysNAND
-- Out of region DSiWare cannot be used from SysNAND without Unlaunch's launcher patches
-- This is only for DSi systems, not 3DS or DS
-
-## Credits
-- [DevkitPro](https://devkitpro.org/): devkitARM and libnds
-- [Tuxality](https://github.com/Tuxality): [maketmd](https://github.com/Tuxality/maketmd)
-- [Martin Korth (nocash)](https://problemkaputt.de): [GBATEK](https://problemkaputt.de/gbatek.htm)
-- [JeffRuLz](https://github.com/JeffRuLz): [TMFH](https://github.com/JeffRuLz/TMFH) (what this is a fork of)
-- [DesperateProgrammer](https://github.com/DesperateProgrammer): [DSi Language Patcher](https://github.com/DesperateProgrammer/DSiLanguagePacher) (working NAND writing code)
-- [rvtr](https://github.com/rvtr): Adding support for installing dev titles
+## Note
+This program only works on DSi systems. If you received a copy of this program that does not have a graphical banner on the top screen, it can be assumed that it is stolen, and you should take extra precautions. The banner and the warning screens are purposefully designed to inform the user of what they are running, as well as provide a window of space to safely exit out of the application.
